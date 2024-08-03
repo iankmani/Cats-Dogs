@@ -27,7 +27,7 @@
 }
 
 .starter-container h2{
-    color: #B4D6CD;
+    color: black;
     text-align: center;
     font-family: "Kanit", sans-serif;
     font-size: 40px;
@@ -58,6 +58,9 @@
 }
 .thebuttons{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     
 }
 .error{

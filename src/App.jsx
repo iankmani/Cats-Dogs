@@ -3,6 +3,7 @@ import Starter from './Starter/Starter'
 import Dog from './dog/Dog'
 import Cat from './cat/Cat'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Footer from './footer/Footer'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <Route path="/dog" element={<Dog/>} />
       <Route path="/cat" element={<Cat/>} />
     </Routes>
+    <Footer/>
     </BrowserRouter>
     </>
   )
