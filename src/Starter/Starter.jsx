@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 const Starter = () => {
     const navigate = useNavigate();
     const handleNavigateToDogsPage = () => {
-        navigate('/Dog')
+        navigate('/DogSignUp')
     }
     const handleNavigateToCatsPage = () => {
         navigate('/Cat')
