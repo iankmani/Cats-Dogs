@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Cat = () => {
-  return (
-    <div>Cat</div>
-  )
-}
+  return <div>Cat</div>;
+};
 
-export default Cat
+export default Cat;
