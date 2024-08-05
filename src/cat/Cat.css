@@ -1,0 +1,103 @@
+.catpage_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.catpage_card_container {
+  /* background-color: #F4E869; */
+  background-color: #ccd5ae;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.catpage_card {
+  /* border: 2px solid red; */
+  width: 300px;
+  /* height: 500px; */
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin: 20px;
+  background-color: #faf2d3;
+  border-radius: 25px;
+
+  /* Smooth transition for scaling */
+}
+
+.catpage_card_img {
+  width: 300px;
+  height: 400px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.catpage_card_contents {
+  text-align: center;
+}
+
+.catpage_card_title {
+  margin: 15px 0; /* Margin for the title */
+}
+
+.catpage_card_contents a {
+  color: grey;
+  text-decoration: none;
+  margin: 15px;
+  position: relative;
+  display: inline-block; /* Ensure the animation applies properly */
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect for Image */
+.catpage_card:hover .catpage_card_img {
+  transform: scale(1.06); /* Enlarge image */
+}
+
+/* Glitter Effect for Link */
+@keyframes glitter {
+  0% {
+    color: grey;
+  }
+  50% {
+    color: gold;
+  }
+  100% {
+    color: grey;
+  }
+}
+
+.catpage_card_contents a:hover {
+  animation: glitter 1s infinite; /* Apply glitter animation */
+  font-weight: bold;
+}
+
+/* Shaking Effect for Link */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.catpage_card_contents a:active {
+  animation: shake 0.3s; /* Apply shake animation */
+}
