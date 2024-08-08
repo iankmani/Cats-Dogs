@@ -8,7 +8,7 @@ const Starter = () => {
     navigate("/DogSignUp");
   };
   const handleNavigateToCatsPage = () => {
-    navigate("/Cat");
+    navigate("/CatSignUp");
   };
   return (
     <section>

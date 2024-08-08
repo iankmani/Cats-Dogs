@@ -33,3 +33,8 @@
   padding: 10px;
   cursor: pointer;
 }
+.Dogsignup-formpart input{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+}
